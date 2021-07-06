@@ -36,7 +36,7 @@ export default {
   },
   mounted () {
       axios
-        .get('http://localhost:3000/get')
+        .get('http://towaitgakusei.ml/get')
         .then(response => {
             this.idols=response.data
             this.length= this.idols.length
