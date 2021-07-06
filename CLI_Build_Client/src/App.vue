@@ -36,7 +36,7 @@ export default {
   },
   mounted () {
       axios
-        .get('http://towaitgakusei.ml/get')
+        .get('http://minhdz117.duckdns.org:6100/get')
         .then(response => {
             this.idols=response.data
             this.length= this.idols.length
