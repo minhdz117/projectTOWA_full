@@ -46,7 +46,7 @@ export default {
   methods:{
     search: function(data){
       console.log (Number(this.idols[1].breast.split(' ')[1]))
-      this.newIdols = this.idols.filter(element =>(element.name.toLowerCase().indexOf(data.name.toLowerCase()) >0 | data.name=='') & 
+      this.newIdols = this.idols.filter(element =>(element.name.toLowerCase().indexOf(data.name.toLowerCase()) >=0 | data.name=='') & 
                                                   Number(element.born.split('/')[2]) >= Number(data.born.min) &
                                                   Number(element.born.split('/')[2]) <= Number(data.born.max) &
                                                   Number(element.breast.split(' ')[1]) >= Number(data.breast.min) &
